@@ -26,3 +26,4 @@ link() {
 }
 
 link aerospace/aerospace.toml "$HOME/.aerospace.toml"
+link borders/bordersrc "$HOME/.config/borders/bordersrc"
