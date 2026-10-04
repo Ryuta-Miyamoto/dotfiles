@@ -11,11 +11,11 @@ macOS 用の個人設定ファイル。
 ## セットアップ
 
 ```sh
-git clone https://github.com/Ryuta-Miyamoto/dotfiles.git ~/dotfiles
-~/dotfiles/install.sh
+git clone https://github.com/Ryuta-Miyamoto/dotfiles.git ~/Work/GitHub/dotfiles
+~/Work/GitHub/dotfiles/install.sh
 ```
 
-既存の設定ファイルは `<name>.backup.<timestamp>` に退避してからシンボリックリンクを作成します。
+clone 先は任意です（`install.sh` は自身の場所を基準にリンクを作成します）。既存の設定ファイルは `<name>.backup.<timestamp>` に退避してからシンボリックリンクを作成します。
 
 ## AeroSpace
 
