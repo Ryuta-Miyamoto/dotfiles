@@ -27,3 +27,11 @@ link() {
 
 link aerospace/aerospace.toml "$HOME/.aerospace.toml"
 link borders/bordersrc "$HOME/.config/borders/bordersrc"
+
+# 公開しない値を置くローカルファイル（.gitignore 済み）。なければサンプルから作る。
+if [ ! -e "$DOTFILES_DIR/finicky/local.js" ]; then
+  cp "$DOTFILES_DIR/finicky/local.sample.js" "$DOTFILES_DIR/finicky/local.js"
+  echo "create: finicky/local.js (edit it to set private values)"
+fi
+link finicky/local.js "$HOME/.config/finicky/local.js"
+link finicky/finicky.js "$HOME/.config/finicky/finicky.js"
